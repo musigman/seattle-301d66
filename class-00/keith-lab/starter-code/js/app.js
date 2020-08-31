@@ -35,8 +35,9 @@ function displayPics(){
       viewed.push(rando);
     }
   }
-  console.log(rando);
+
   // TODO: In a sentence or two, explain why the previous line of code threw an error when we changed the letiable declaration from `var to `let`.
+
   // Answer: rando was not defined.
   console.log(viewed);
 
