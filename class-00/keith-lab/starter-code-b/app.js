@@ -134,20 +134,28 @@ const objectLit = (objectLit) => {
   return `key ${1} , key ${2} , key ${3}`;
 };
 
-// const objectLit = array => ({
-//   Key1: array[],
-//   Key2: array[],
-//   Key3: array[]
-// });
 
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 console.log(objectLit());
 
 
-let sumAndProduct = function(a, b) {
-  let sum = a + b;
-  let product = a * b;
+// let sumAndProduct = function(a, b) {
+//   let sum = a + b;
+//   let product = a * b;
+//   return [sum, product];
+// };
+
+// const sumAndProduct = function (a, b) {
+//   const sum = (a + b) => `${a} + ${b} = ${a} + ${b}`;
+//   const product = (a * b) => `${a} * ${b} = ${a} * ${b}`;
+//   return [sum, product];
+// };
+
+// still working on this one!
+const sumAndProduct =  (a, b) => {
+  const sum = (a + b) `${a} + ${b} = ${a} + ${b}`;
+  const product = (a * b) `${a} * ${b} = ${a} * ${b}`;
   return [sum, product];
 };
 
@@ -155,25 +163,36 @@ let sumAndProduct = function(a, b) {
 // console.log(sumAndProduct(3, 9));
 
 
-let message = function(name) {
+// let message = function(name) {
+//   return `Hello, ${name}!`;
+// };
+
+const message = (name) => {
   return `Hello, ${name}!`;
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(message('Allie'));
+console.log(message('Allie'));
 
 
-let Student = function(name, age, hometown) {
-  this.name = name;
-  this.age = age;
-  this.hometown = hometown;
+// let Student = function(name, age, hometown) {
+//   this.name = name;
+//   this.age = age;
+//   this.hometown = hometown;
+// };
+
+// let joe = new Student('Joe', 'Schmoe', 100);
+
+const Student = function (name, age, hometown) { 
+  this.name = `${name}`;
+  this.age = `${age}`;
+  this.hometown = `${hometown}`;
 };
-
-let joe = new Student('Joe', 'Schmoe', 100);
+const joe = new Student('Joe', 100, 'Schmoe');
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
-// console.log(joe);
+console.log(joe);
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
