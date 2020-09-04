@@ -143,8 +143,8 @@ console.log(objectLit());
 
 
 const sumAndProduct =  (a, b) => {
-  const sum = (a + b) `${a} + ${b} = ${a} + ${b}`;
-  const product = (a * b) `${a} * ${b} = ${a} * ${b}`;
+  const sum = `${a} + ${b} = ${a} + ${b}`;
+  const product = `${a} * ${b} = ${a} * ${b}`;
   return [sum, product];
 };
 
@@ -165,12 +165,13 @@ console.log(message('Allie'));
 
 
 
-const Student = () => (name, age, hometown) { 
+const Student = function (name, age, hometown) { 
   this.name = `${name}`;
   this.age = `${age}`;
   this.hometown = `${hometown}`;
 };
 const joe = new Student('Joe', 100, 'Schmoe');
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
